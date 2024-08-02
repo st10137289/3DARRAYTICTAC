@@ -13,31 +13,31 @@ public class Main
             }
         }
 
-        // Calculate and print row sums
+        
         int[] rowSums = new int[3];
         int[] colSums = new int[3];
 
         for (int i = 0; i < 3; i++) {
             for (int j = 0; j < 3; j++) {
-                rowSums[i] += ticTac[i][j];  // Sum each row
-                colSums[j] += ticTac[i][j];  // Sum each column
+                rowSums[i] += ticTac[i][j];  
+                colSums[j] += ticTac[i][j];  
             }
         }
 
-        // Print the grid with row sums
+        
         for (int i = 0; i < 3; i++) {
             for (int j = 0; j < 3; j++) {
-                System.out.print(ticTac[i][j] + "\t"); // Print grid value
+                System.out.print(ticTac[i][j] + "\t"); 
             }
-            System.out.println("= " + rowSums[i]);  // Print row sum
+            System.out.println("= " + rowSums[i]);  
         }
 
-        // Print separator for column sums
+        
         System.out.println("=   =   =");
 
-        // Print the column sums
+        
         for (int j = 0; j < 3; j++) {
-            System.out.print(colSums[j] + "\t");  // Print column sum
+            System.out.print(colSums[j] + "\t");  
         }
     }
 }
